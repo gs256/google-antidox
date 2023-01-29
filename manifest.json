@@ -1,0 +1,15 @@
+{
+    "name": "Google Antidox",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {},
+    "permissions": ["tabs"],
+    "host_permissions": ["https://www.google.com/search*"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/search*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {}
+}
